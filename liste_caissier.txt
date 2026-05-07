@@ -1,0 +1,5 @@
+
+
+rita|1234|administrateur|2026-04-22|actif
+micheline|pass99|caissier|2026-04-20|actif
+jean|azerty|caissier|2026-04-21|inactif

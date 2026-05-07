@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Enregistrement du patient</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="caisse">
+
+    <main>
+        <h1>Enregistrement du caissier</h1>
+           
+        <form action="caissier.php" method="post">
+            <!-- n'allait le droit de s'enregistrer que celui qui ne se jamais identifier -->
+            
+            <label for="id">identifiant :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre identifiant" required>
+
+            <label for="mot">Mot de passe:</label>
+            <input type="password" id="mot" name="mdp" placeholder="Votre mot de passe" required>
+
+            <label for="role">Role:</label>
+            <input type="text" id="roles" name="role" required>
+
+           
+
+            <label for="date">Date_creation :</label>
+            <input type="date" id="dates" name="date" placeholder="date" required>
+
+            <label for="motif">Actif :</label>
+            <input type="text" id="a" name="actif" required>
+            
+             <!-- <p>NB: n'a le droit de s'enregistrer que celui qui ne se jamais identifier</p> -->
+            <button type="submit" class="btn">Continuer</button> <br> <br>
+            <button type="submit" class="btn"><a href="index.html">Sortir</a></button>
+
+
+
+            <!-- Ce lien est temporaire , elle disparaitra lorsque tous deviendra automatique cad l'utilisateur sera rediger automatiquement apres s'
+             etre enregistrer -->
+             
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+
+
+/* page index */
+
+body.index{
+
+    height: 100vh;
+    background-image: url("photo/stickers-divers-pain.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* pour que le contenu soit bien centrer */
+body.index .hopital{
+    /* facultatif */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+
+    
+}
+
+body.index .hopital h3{
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: black;
+    /* color:g; */
+
+}
+body.index .hopital p{
+    font-size: 18px;
+    margin: 30px;
+    color: black;
+    /* color:greenyellow; */
+}
+
+.btn{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: #0b5ed7;
+    color: black;
+    font-size: 18px;
+    border-radius: 30px;
+    transition:0.3;
+
+
+}
+.btn:hover{
+    background-color:red; 
+}
+
+
+
+
+/* ===== ANIMATION TITRE ===== */
+.hopital h3 {
+    font-size: 48px;
+    margin-bottom: 15px;
+
+    animation: glow 2s ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff;
+    }
+}
+
+/* ===== ANIMATION TEXTE ===== */
+.hopital p {
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    animation: fadeText 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        text-shadow: 0 0 10px white;
+    }
+}
+
+
+body.caisse{
+    background-image: url("photo/1776866107195 (1).jpg");
+}
+
+body.caisse main {
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: url("photo/shutterstock_1688252332-1 (1) (1).jpg");
+    padding: 40px 50px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+body.caisse h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e90ff;
+}
+
+/* Formulaire */
+body.caisse form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Bouton */
+form .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .btn:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+
+
+body.dep{
+     background-image: url("photo/1776866107195 (1).jpg");
+}
+
+body.dep main {
+    width: 40%;
+     background-image: url("photo/shutterstock_1688252332-1 (1) (1).jpg");
+    margin: auto;
+    padding: 30px;
+
+    background-color: wheat;
+}
+
+
+body.dep h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #005fa3;
+}
+
+/* Section départements */
+#branche {
+    display: flex;
+    gap: 20px;
+    /* overflow-x: auto;  */
+    /* permet le défilement horizontal si écran petit */
+    padding-bottom: 10px;
+    background-color: red;
+
+}
+
+/* Carte département */
+.departement {
+    background-color: cadetblue;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* min-width: 220px; */
+    padding: 20px;
+    margin: 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.departement h3 {
+    margin-bottom: 10px;
+    color: #0077cc;
+}
+
+.departement p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.departement button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #005fa3;
+    color: white;
+    cursor: pointer;
+}
+
+.departement button:hover {
+    background-color: #00457a;
+}
+
+
